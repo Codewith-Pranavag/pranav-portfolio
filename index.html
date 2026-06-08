@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Kumar Agrawal | Founder, Developer & Cybersecurity Enthusiast</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Personal brand website of Pranav Kumar Agrawal. Founder of bhuOne Labs, Developer, and Cybersecurity Enthusiast. GLA University B.Tech CSE student.">
+    <meta name="keywords" content="Pranav Kumar Agrawal, Pranav Agrawal, bhuOne Labs, Cybersecurity, Developer, Software Engineer, GLA University, Ethical Hacker, Java DSA, Android Developer, Cyber Ambassador">
+    <meta name="author" content="Pranav Kumar Agrawal">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Pranav Kumar Agrawal | Founder, Developer & Cybersecurity Enthusiast">
+    <meta property="og:description" content="Building secure digital products, solving real-world problems, and growing through technology.">
+    <meta property="og:image" content="assets/avatar.png">
+    <meta property="og:url" content="https://github.com/Codewith-Pranavag">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Particle background canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="content-wrapper">
+        <!-- Navigation Header -->
+        <header id="main-header">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    Pranav Agrawal<span>.</span>
+                </a>
+                
+                <nav>
+                    <ul class="nav-links" id="nav-menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#drives">What Drives Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#leetcode">LeetCode</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="nav-right">
+                    <button class="mobile-nav-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-name">PRANAV KUMAR AGRAWAL</div>
+                        <h1 class="gradient-text">Founder, Developer & Cybersecurity Enthusiast</h1>
+                        <p class="hero-statement">
+                            Building secure digital products, solving real-world problems, and growing through technology.
+                        </p>
+                        <p class="hero-intro">
+                            Computer Science undergraduate passionate about cybersecurity, software engineering, startups, and creating impactful digital solutions.
+                        </p>
+                        
+                        <div class="btn-container">
+                            <a href="#projects" class="btn btn-primary">
+                                View My Work <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                Get In Touch <i data-lucide="message-square" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="profile-card">
+                            <img src="assets/avatar.png" alt="Pranav Kumar Agrawal portrait">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title gradient-text">My Narrative</h2>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a Computer Science and Engineering student at GLA University, building at the intersection of application development and cybersecurity. My focus is on writing secure, maintainable software and architecting digital platforms that scale.
+                        </p>
+                        <p>
+                            As the Founder of <a href="https://www.bhuonelabs.com/" target="_blank" rel="noopener" class="accent-blue-text"><strong>bhuOne Labs</strong></a>, I direct the development of affordable, high-quality, and robust software solutions for startups, local businesses, and growing enterprises. This startup operates as a vehicle to translate classroom paradigms directly into operational architectures.
+                        </p>
+                        <p>
+                            In addition to programming, I am highly interested in cybersecurity and ethical hacking. I actively learn Object-Oriented Java and Data Structures & Algorithms, while dedicating spare cycles to understanding VAPT concepts, secure coding standards, and threat analysis models to build safer products.
+                        </p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4>Academic Foundations</h4>
+                                <p>B.Tech CSE Student at GLA University. Deep-diving into core Object-Oriented Java, Data Structures, and Algorithmic concepts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">
+                                <i data-lucide="terminal"></i>
+                            </div>
+                            <div>
+                                <h4>bhuOne Labs Operations</h4>
+                                <p>Managing product lifecycles, designing robust API architectures, and deploying Android and web platforms for clients.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <div>
+                                <h4>Cybersecurity Advocacy</h4>
+                                <p>Educating communities and auditing small web servers to prevent data integrity exposures and session compromises.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section with Counters -->
+            <section id="stats" class="stats-section">
+                <div class="stats-grid">
+                    <!-- Stat 1 -->
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="stat-count" data-target="1">0</div>
+                        <p>Founder @ bhuOne Labs</p>
+                    </div>
+                    
+                    <!-- Stat 2 -->
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="stat-count" data-target="1">0</div>
+                        <p>Cyber Ambassador</p>
+                    </div>
+                    
+                    <!-- Stat 3 -->
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i data-lucide="folder-git-2"></i>
+                        </div>
+                        <div class="stat-count" data-target="15">0</div>
+                        <p>GitHub Repositories</p>
+                    </div>
+                    
+                    <!-- Stat 4 -->
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <div class="stat-count" data-target="302">0</div>
+                        <p>LeetCode Solves</p>
+                    </div>
+                    
+                    <!-- Stat 5 -->
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i data-lucide="calendar"></i>
+                        </div>
+                        <div class="stat-count" data-target="4">0</div>
+                        <p>Years of Learning</p>
+                    </div>
+                    
+                    <!-- Stat 6 -->
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i data-lucide="git-pull-request"></i>
+                        </div>
+                        <div class="stat-count" data-target="650">0</div>
+                        <p>Open Source Commits</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <div class="section-tag">Chronology</div>
+                <h2 class="section-title gradient-text">Work Experience</h2>
+                
+                <div class="timeline-layout">
+                    <!-- 2026 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-year">2026</div>
+                        <div class="timeline-card">
+                            <h3>Founder</h3>
+                            <a href="https://www.bhuonelabs.com/" target="_blank" rel="noopener" class="company" style="display:inline-flex; align-items:center; gap:4px;">
+                                bhuOne Labs <i data-lucide="external-link" style="width:14px; height:14px;"></i>
+                            </a>
+                            <p>Building affordable, secure, and highly scalable software solutions, web platforms, and mobile products for local businesses, startups, and growing enterprises.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 2025 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-card">
+                            <h3>Cyber Ambassador</h3>
+                            <span class="company">Haryana Police Outreach</span>
+                            <p>Participated in cyber safety initiatives, spreading digital awareness, discussing basic security configurations, and advocating against phishing and identity theft threats.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- "What Drives Me" Section -->
+            <section id="drives">
+                <div class="section-tag">Principles</div>
+                <h2 class="section-title gradient-text">What Drives Me</h2>
+                <p class="section-desc">The core disciplines and methodologies that define my work ethic and software philosophy.</p>
+                
+                <div class="why-work-grid">
+                    <!-- Card 1 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <h3>Problem Solving</h3>
+                        <p>Breaking down complex computational challenges into smaller, optimized algorithmic steps, focusing on space-time efficiency.</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i data-lucide="lock"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Enforcing threat modeling, input validations, and secure cryptography configurations at step zero of software development.</p>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i data-lucide="repeat"></i>
+                        </div>
+                        <h3>Continuous Learning</h3>
+                        <p>Dedicating structured time to master new languages, study network protocols, and practice complex DSA problems daily.</p>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i data-lucide="package-open"></i>
+                        </div>
+                        <h3>Building Products</h3>
+                        <p>Transforming complex conceptual requirements into responsive, interactive, and user-centric web and mobile platforms.</p>
+                    </div>
+                    
+                    <!-- Card 5 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Designing workflows that streamline manual tasks, optimize server loads, and introduce automated mechanisms into systems.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <div class="section-tag">Portfolio</div>
+                <h2 class="section-title gradient-text">Featured Projects</h2>
+                <p class="section-desc">A curated compilation of custom-built applications, APIs, and security codebases pulled directly from GitHub.</p>
+                
+                <div class="projects-grid" id="github-projects-container">
+                    <!-- Loading Placeholders -->
+                    <div class="project-card" style="justify-content: center; align-items: center; border-style: dashed;">
+                        <i data-lucide="loader" class="animate-spin" style="color:var(--accent-blue); width: 24px; height: 24px; margin-bottom: 12px;"></i>
+                        <p style="font-family:'Fira Code', monospace; font-size: 0.85rem; color:var(--text-secondary);">Querying repository tree...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LeetCode & Developer Dashboard Section -->
+            <section id="leetcode">
+                <div class="section-tag">Analytics</div>
+                <h2 class="section-title gradient-text">LeetCode & Developer Activity</h2>
+                <p class="section-desc">Interactive tracker showcasing live metrics from competitive solving platforms and commit frequencies.</p>
+                
+                <div class="dashboard-grid">
+                    <!-- LeetCode Card -->
+                    <div class="dashboard-card">
+                        <div class="dashboard-title">
+                            <i data-lucide="award" style="color: var(--accent-blue);"></i>
+                            LeetCode Solving Status
+                            <span>@Pranav_kumar_Agrawal</span>
+                        </div>
+                        
+                        <div class="leetcode-overview">
+                            <div class="leetcode-progress">
+                                <svg class="leetcode-svg" width="140" height="140" viewBox="0 0 140 140">
+                                    <circle class="leetcode-circle-bg" cx="70" cy="70" r="60"></circle>
+                                    <circle class="leetcode-circle-val" cx="70" cy="70" r="60"></circle>
+                                </svg>
+                                <div class="leetcode-progress-text">
+                                    <span class="lc-num" id="lc-total-solved">302</span>
+                                    <span class="lc-lbl">Solved</span>
+                                </div>
+                            </div>
+                            
+                            <div class="leetcode-breakdown">
+                                <div>
+                                    <div class="lc-diff-row">
+                                        <span class="lc-diff-name"><span class="lc-diff-dot lc-easy-dot"></span> Easy</span>
+                                        <span class="lc-diff-nums"><strong id="lc-easy-solved">132</strong><span>/350</span></span>
+                                    </div>
+                                    <div class="lc-bar">
+                                        <div class="lc-bar-fill easy"></div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="lc-diff-row">
+                                        <span class="lc-diff-name"><span class="lc-diff-dot lc-med-dot"></span> Medium</span>
+                                        <span class="lc-diff-nums"><strong id="lc-med-solved">140</strong><span>/600</span></span>
+                                    </div>
+                                    <div class="lc-bar">
+                                        <div class="lc-bar-fill medium"></div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="lc-diff-row">
+                                        <span class="lc-diff-name"><span class="lc-diff-dot lc-hard-dot"></span> Hard</span>
+                                        <span class="lc-diff-nums"><strong id="lc-hard-solved">30</strong><span>/150</span></span>
+                                    </div>
+                                    <div class="lc-bar">
+                                        <div class="lc-bar-fill hard"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GitHub contribution heat map card -->
+                    <div class="dashboard-card">
+                        <div class="dashboard-title">
+                            <i data-lucide="github" style="color: var(--text-primary);"></i>
+                            Open Source Commits
+                            <span>@Codewith-Pranavag</span>
+                        </div>
+                        
+                        <div class="github-visual">
+                            <div class="github-grid-container">
+                                <div class="contrib-grid" id="contrib-heatmap">
+                                    <!-- Populated by main.js Grid -->
+                                </div>
+                            </div>
+                            
+                            <div class="github-meta">
+                                <span>650+ contributions in the last year</span>
+                                <div class="github-meta-legend">
+                                    <span>Less</span>
+                                    <span class="contrib-cell" style="width: 8px; height: 8px;"></span>
+                                    <span class="contrib-cell lvl-1" style="width: 8px; height: 8px;"></span>
+                                    <span class="contrib-cell lvl-2" style="width: 8px; height: 8px;"></span>
+                                    <span class="contrib-cell lvl-3" style="width: 8px; height: 8px;"></span>
+                                    <span class="contrib-cell lvl-4" style="width: 8px; height: 8px;"></span>
+                                    <span>More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements">
+                <div class="section-tag">Accolades</div>
+                <h2 class="section-title gradient-text">Honors & Accomplishments</h2>
+                <p class="section-desc">Key highlights demonstrating my growth as a founder, student, developer, and cybersecurity researcher.</p>
+                
+                <div class="achievements-grid">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <a href="https://www.bhuonelabs.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px;">
+                            <h4>Founder - bhuOne Labs <i data-lucide="external-link" style="width:14px; height:14px; color:var(--accent-blue);"></i></h4>
+                        </a>
+                        <p>Conceptualized and built bhuOne Labs from the ground up, delivering stable and secure web architectures for startups.</p>
+                    </div>
+                    
+                    <!-- Achievement 2 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h4>Cyber Ambassador</h4>
+                        <p>Appointed to represent public safety and cybersecurity initiatives, coordinating security guidance sessions.</p>
+                    </div>
+                    
+                    <!-- Achievement 3 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i data-lucide="lock"></i>
+                        </div>
+                        <h4>Cybersecurity Enthusiast</h4>
+                        <p>Actively auditing local environments, identifying session-hijack potentials, and validating encryption structures.</p>
+                    </div>
+                    
+                    <!-- Achievement 4 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i data-lucide="binary"></i>
+                        </div>
+                        <h4>Competitive Programmer</h4>
+                        <p>Solved 300+ algorithms and structures challenges on LeetCode with high performance ratings.</p>
+                    </div>
+                    
+                    <!-- Achievement 5 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <h4>Builder & Entrepreneur</h4>
+                        <p>Bridging commercial project logic with robust coding standards, fostering software automation for regional enterprises.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <div class="section-tag">Collaboration</div>
+                <h2 class="section-title gradient-text">Let's Build Something Great Together</h2>
+                <p class="section-desc">I am always open to exploring software architecture collaborations, VAPT opportunities, or startup collaborations.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 24px;">Connection Details</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 32px; font-size: 1.05rem;">
+                            Submit a query through the session console, or establish direct communication through my verified social nodes:
+                        </p>
+                        
+                        <div class="contact-details">
+                            <!-- Email -->
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <img src="assets/gmail.png" alt="Gmail Logo">
+                                </div>
+                                <div class="contact-card-text">
+                                    <span>Secure Email</span>
+                                    <a href="mailto:agrawalpranav087@gmail.com">agrawalpranav087@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- LinkedIn -->
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <img src="assets/linkedin.png" alt="LinkedIn Logo">
+                                </div>
+                                <div class="contact-card-text">
+                                    <span>Professional Portal</span>
+                                    <a href="https://www.linkedin.com/in/pranav-kumar-agrawal-/" target="_blank" rel="noopener">linkedin.com/in/pranav-kumar-agrawal-</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <img src="assets/phone.png" alt="Phone Logo">
+                                </div>
+                                <div class="contact-card-text">
+                                    <span>Call / Secure Line</span>
+                                    <a href="tel:+919548247030">+91 9548247030</a>
+                                </div>
+                            </div>
+                            
+                            <!-- GitHub -->
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <img src="assets/github.png" alt="GitHub Logo">
+                                </div>
+                                <div class="contact-card-text">
+                                    <span>Code Hub</span>
+                                    <a href="https://github.com/Codewith-Pranavag" target="_blank" rel="noopener">github.com/Codewith-Pranavag</a>
+                                </div>
+                            </div>
+                            
+                            <!-- LeetCode -->
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <img src="assets/leetcode.png" alt="LeetCode Logo">
+                                </div>
+                                <div class="contact-card-text">
+                                    <span>LeetCode Solves</span>
+                                    <a href="https://leetcode.com/u/Pranav_kumar_Agrawal/" target="_blank" rel="noopener">leetcode.com/Pranav_kumar_Agrawal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Container -->
+                    <div class="contact-form-container">
+                        <form id="portfolio-contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="client-name">Your Name</label>
+                                    <input type="text" id="client-name" class="form-control" placeholder="Enter name" required autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="client-email">Email Address</label>
+                                    <input type="email" id="client-email" class="form-control" placeholder="Enter email" required autocomplete="email">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="client-subject">Connection Subject</label>
+                                <input type="text" id="client-subject" class="form-control" placeholder="Query type (e.g. project query, consulting)" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="client-message">Message Payload</label>
+                                <textarea id="client-message" class="form-control" placeholder="Write message..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                Initialize Connection <i data-lucide="send" style="width:18px; height:18px;"></i>
+                            </button>
+                            
+                            <div class="form-status" id="form-callback"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    PRANAV KUMAR AGRAWAL
+                </div>
+                
+                <p class="footer-tagline">
+                    Founder @ <span>bhuOne Labs</span>
+                </p>
+                
+                <div class="footer-socials">
+                    <a href="mailto:pranav.agrawal.contact@gmail.com" aria-label="Gmail">
+                        <img src="assets/gmail.png" alt="Gmail Logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pranav-kumar-agrawal-/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="assets/linkedin.png" alt="LinkedIn Logo">
+                    </a>
+                    <a href="https://leetcode.com/u/Pranav_kumar_Agrawal/" target="_blank" rel="noopener" aria-label="LeetCode">
+                        <img src="assets/leetcode.png" alt="LeetCode Logo">
+                    </a>
+                    <a href="https://github.com/Codewith-Pranavag" target="_blank" rel="noopener" aria-label="GitHub">
+                        <img src="assets/github.png" alt="GitHub Logo">
+                    </a>
+                </div>
+                
+                <p class="footer-copyright">
+                    &copy; 2026 Pranav Kumar Agrawal. All Rights Reserved. Built with passion, security, and innovation.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- GSAP for Smooth Entry animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Lucide SVG Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js"></script>
+</body>
+</html>
