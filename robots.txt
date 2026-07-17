@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pranavagrawal.com
+
+# Sitemap Link
+Sitemap: https://pranavagrawal.com/sitemap.xml

@@ -1,0 +1,24 @@
+{
+  "name": "Pranav Kumar Agrawal Portfolio",
+  "short_name": "Pranav Portfolio",
+  "description": "Personal portfolio site of Pranav Kumar Agrawal - AI & Cybersecurity researcher and software engineering student.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#2563EB",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/avatar.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/avatar.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
