@@ -708,41 +708,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = 'Connecting Server... <i data-lucide="loader" class="animate-spin" style="width:16px; height:16px;"></i>';
-            window.lucide.createIcons();
+    contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-            formCallback.className = 'form-status';
-            formCallback.style.display = 'none';
+        const submitBtn = contactForm.querySelector("button[type='submit']");
+        const originalText = submitBtn.innerHTML;
 
-            // Simulate connection dispatch
-            setTimeout(() => {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-                window.lucide.createIcons();
-                
-                const name = document.getElementById('client-name').value;
-                const email = document.getElementById('client-email').value;
-                
-                if (name && email) {
-                    formCallback.innerHTML = `[SUCCESS]: TLS connection handshake complete. Message payload sent. Welcome, ${name}!`;
-                    formCallback.className = 'form-status success';
-                    contactForm.reset();
-                    if (customSubjectGroup) customSubjectGroup.style.display = 'none';
-                    if (customSubjectInput) customSubjectInput.required = false;
-                } else {
-                    formCallback.innerHTML = `[ERROR]: Request parameter validation failed. Check headers.`;
-                    formCallback.className = 'form-status error';
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Sending...";
+
+        const data = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: data,
+                headers: {
+                    "Accept": "application/json"
                 }
-            }, 1600);
-        });
-    }
+            });
+
+            if (response.ok) {
+                formCallback.innerHTML = "✅ Message sent successfully!";
+                formCallback.className = "form-status success";
+                contactForm.reset();
+            } else {
+                formCallback.innerHTML = "❌ Failed to send message.";
+                formCallback.className = "form-status error";
+            }
+        } catch (error) {
+            formCallback.innerHTML = "❌ Network error.";
+            formCallback.className = "form-status error";
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+    });
+}
 
     // ==========================================================================
     // 9. Gallery Multi-Image Album Lightbox (Gallery Page Only)
